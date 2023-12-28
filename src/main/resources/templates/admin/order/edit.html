@@ -143,7 +143,7 @@
                                                         <th>Sản phẩm</th>
                                                         <th>Kích cỡ</th>
                                                         <th>Giá tiền</th>
-                                                        <th>Khuyến mãi</th>
+                                                        <th>Khuyến mại</th>
                                                         <th>Mức giảm</th>
                                                         <th>Thành tiền</th>
                                                     </tr>
@@ -236,9 +236,9 @@
                             <span class="invalid-feedback" id="invalid-feedback-product">Sản phẩm đã hết size</span>
                         </div>
                         <div class="form-group">
-                            <label for="size">Khuyến mãi</label>
+                            <label for="size">Khuyến mại</label>
                             <select class="form-control" id="promotion">
-                                <option value="">Chọn khuyến mãi</option>
+                                <option value="">Chọn khuyến mại</option>
                                 <th:block th:each="promotion : ${promotions}">
                                     <option th:value="${promotion.couponCode}">
                                         <span th:text="${promotion.couponCode}"></span> -
@@ -258,7 +258,7 @@
                                 <span class="text-price badge badge-primary" id="product-price">0</span>
                             </div>
                             <div class="display-info-price">
-                                <span>Khuyến mãi</span>
+                                <span>Khuyến mại</span>
                                 <span class="text-price badge badge-warning" id="promotion-price">0</span>
                             </div>
                             <div class="display-info-price">
